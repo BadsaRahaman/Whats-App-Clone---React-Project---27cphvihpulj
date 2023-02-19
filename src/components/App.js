@@ -1,24 +1,25 @@
-import styled from 'styled-components'
-import React,{useState} from 'react'
-import ContactList from './ContactList';
-import Conversation from './Conversation';
+import styled from "styled-components";
+import React, { useState } from "react";
+import ContactList from "./ContactList";
+import Conversation from "./Conversation";
+import "../styles/app.css";
 
 const Container = styled.div`
-display : flex;
-flex-direction: row;
-height : 100vh;
-width: 100%;
-background: f8f9fb;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+  background: f8f9fb;
 `;
 
 const Placeholder = styled.div`
-  display: flex; 
+  display: flex;
   flex: 3;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 14px;
-  color: rgba(0,0,0,0.45);
+  color: rgba(0, 0, 0, 0.45);
   gap: 10px;
   span {
     font-size: 32px;
@@ -36,17 +37,17 @@ const App = () => {
   const [selectedChat, setSelectedChat] = useState();
   return (
     <Container>
-      <ContactList setSelectedChat={setSelectedChat}/>
+      <ContactList setSelectedChat={setSelectedChat} />
       {selectedChat ? (
-      <Conversation selectedChat= {selectedChat}/>
+        <Conversation selectedChat={selectedChat} />
       ) : (
-      <Placeholder>
-        <ChatPlaceHolder src="/public/welcome-placeholder.jpeg"/>
-        <span>Keep your phone connected</span>
-        Whatsapp connects to your phone to sync messages.
-      </Placeholder>
+        <Placeholder>
+          <ChatPlaceHolder src="/src/public/welcome-placeholder.jpeg" />
+          <span>Keep your phone connected</span>
+          Whatsapp connects to your phone to sync messages.
+        </Placeholder>
       )}
     </Container>
-  )
-}
+  );
+};
 export default App;
