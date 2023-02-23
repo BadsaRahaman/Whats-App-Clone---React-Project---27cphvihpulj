@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import EmojiPicker from "emoji-picker-react";
 import styled from "styled-components";
 import { SearcContainer, SearchInput } from "./ContactList";
 import { messagesList } from "./MockData";
+import dataSvg from "../public/data.svg"
+import sendButtonIcon from "../public/send-button.png"
 
 const Container = styled.div`
   display: flex;
@@ -144,7 +145,7 @@ const Conversation = (props) => {
       <ChatBox>
         <SearcContainer>
         
-          <EmojiImage src="/src/public/data.svg" />
+          <EmojiImage src={dataSvg} />
           <SearchInput
             placeholder="Type a message"
             value={text}
@@ -152,7 +153,7 @@ const Conversation = (props) => {
             onChange={(e) => setText(e.target.value)}
           />
           <SendButton onClick={sendMessage}>
-            <img src="/src/public/send-button.png" alt="" />
+            <img src={sendButtonIcon} alt="" />
           </SendButton>
         </SearcContainer>
       </ChatBox>

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import ContactList from "./ContactList";
 import Conversation from "./Conversation";
 import "../styles/App.css";
+import welcomePic from "../public/welcome-placeholder.jpeg"
 
 const Container = styled.div`
   display: flex;
@@ -42,7 +43,7 @@ const App = () => {
         <Conversation selectedChat={selectedChat} />
       ) : (
         <Placeholder>
-          <ChatPlaceHolder src="/src/public/welcome-placeholder.jpeg" />
+          <ChatPlaceHolder src={welcomePic} />
           <span>Keep your phone connected</span>
           Whatsapp connects to your phone to sync messages.
         </Placeholder>

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { contactList, messagesList } from "./MockData";
+import badsaPic from "../public/profile/badsa.jpg"
+import searchIcon from "../public/search-icon.svg"
 
 const Container = styled.div`
   display: flex;
@@ -137,11 +139,11 @@ const ContactList = (props) => {
   return (
     <Container>
       <ProfileInfoDiv>
-        <ProfileImage src="/src/public/profile/badsa.jpg" />
+        <ProfileImage src={badsaPic}/>
       </ProfileInfoDiv>
       <SearchBox>
         <SearcContainer>
-          <SearchIcon src={"/src/public/search-icon.svg"} />
+          <SearchIcon src={searchIcon} />
           <SearchInput
             placeholder="Search or start new chat"
             onChange={(e) => filterContact(e.target.value)}
