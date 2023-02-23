@@ -1,9 +1,11 @@
 import badsa from "../public/profile/badsa.jpg"
-import khusboo from "../public/profile/khusboo.jpg"
-import manoj from "../public/profile/manoj.jpg"
 import raja from "../public/profile/raja.jpg"
-import robi from "../public/profile/robi.jpg"
+import khusboo from "../public/profile/khusboo.jpg"
 import victor from "../public/profile/victor.jpg"
+import manoj from "../public/profile/manoj.jpg"
+
+import robi from "../public/profile/robi.jpg"
+
 
 
 export const contactList = [
@@ -17,35 +19,35 @@ export const contactList = [
   {
     id: 2,
     name: "Raja Rahman",
-    profilePic: khusboo,
+    profilePic: raja,
     lastText: "Hey Bro !",
     lastTextTime: "11:50 PM",
   },
   {
     id: 3,
     name: "Khusboo Rahman",
-    profilePic: manoj,
+    profilePic: khusboo,
     lastText: `Good Morning ..`,
     lastTextTime: "10:45 AM",
   },
   {
     id: 4,
     name: "Victor Barman",
-    profilePic: raja,
+    profilePic: victor,
     lastText: "Hi ...",
     lastTextTime: "12:30 PM",
   },
   {
     id: 5,
     name: "Manoj Barman",
-    profilePic: robi,
+    profilePic: manoj,
     lastText: "Lets go to Party",
     lastTextTime: "8:00 PM",
   },
   {
     id: 6,
     name: "Robi Haque",
-    profilePic: victor,
+    profilePic: robi,
     lastText: "Lets go to Party",
     lastTextTime: "8:00 PM",
   },
