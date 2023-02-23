@@ -2,7 +2,7 @@ import styled from "styled-components";
 import React, { useState } from "react";
 import ContactList from "./ContactList";
 import Conversation from "./Conversation";
-import "../styles/app.css";
+import "../styles/App.css";
 
 const Container = styled.div`
   display: flex;
