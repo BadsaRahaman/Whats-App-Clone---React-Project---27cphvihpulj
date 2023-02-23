@@ -1,43 +1,51 @@
+import badsa from "../public/profile/badsa.jpg"
+import khusboo from "../public/profile/khusboo.jpg"
+import manoj from "../public/profile/manoj.jpg"
+import raja from "../public/profile/raja.jpg"
+import robi from "../public/profile/robi.jpg"
+import victor from "../public/profile/victor.jpg"
+
+
 export const contactList = [
   {
     id: 1,
     name: "Badshaa",
-    profilePic: "/src/public/profile/badsa.jpg",
+    profilePic: badsa,
     lastText: "Lets go to Party",
     lastTextTime: "8:00 PM",
   },
   {
     id: 2,
     name: "Raja Rahman",
-    profilePic: "/src/public/profile/raja.jpg",
+    profilePic: khusboo,
     lastText: "Hey Bro !",
     lastTextTime: "11:50 PM",
   },
   {
     id: 3,
     name: "Khusboo Rahman",
-    profilePic: "/src/public/profile/khusboo.jpg",
+    profilePic: manoj,
     lastText: `Good Morning ..`,
     lastTextTime: "10:45 AM",
   },
   {
     id: 4,
     name: "Victor Barman",
-    profilePic: "/src/public/profile/victor.jpg",
+    profilePic: raja,
     lastText: "Hi ...",
     lastTextTime: "12:30 PM",
   },
   {
     id: 5,
     name: "Manoj Barman",
-    profilePic: "/src/public/profile/manoj.jpg",
+    profilePic: robi,
     lastText: "Lets go to Party",
     lastTextTime: "8:00 PM",
   },
   {
     id: 6,
     name: "Robi Haque",
-    profilePic: "/src/public/profile/robi.jpg",
+    profilePic: victor,
     lastText: "Lets go to Party",
     lastTextTime: "8:00 PM",
   },
